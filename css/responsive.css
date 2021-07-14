@@ -1,0 +1,106 @@
+/*-------------------------
+    Large Device
+-------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container,.small-container {
+        width: 992px;
+    }
+}
+
+/*-------------------------
+    Medium Device
+-------------------------*/
+@media (min-width: 600px) and (max-width: 991px) {
+    .container,.small-container {
+        width: 768px;
+    }
+    .hero-text h2 {
+        font-size: 45px;
+        line-height: 52px;
+    }
+    .colm-4, .colm-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .game-data h2 {
+        font-size: 35px;
+    }
+    .time h5 {
+        font-size: 18px;
+    }
+    .team-img {
+        width: 70px;
+    }
+    .team-name {
+        font-size: 14px;
+    }
+    .goal-details h4 {
+        font-size: 48px;
+    }
+    #footer {
+        padding: 40px 0;
+    }
+}
+
+/*-------------------------
+    small tab
+-------------------------*/
+@media (min-width: 600px) and (max-width: 767px) {
+    .container,.small-container {
+        width: 600px;
+    }
+    .hero-text h2 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+}
+
+/*-------------------------
+    Extra small Device 
+-------------------------*/
+@media (max-width: 599px) {
+    .container,.small-container {
+        max-width: 599px;
+        width: 100%;
+    }
+    .colm-6, .colm-4, .colm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hero-text h2 {
+        font-size: 36px;
+        line-height: 50px;
+        max-width: 280px;
+    }
+    .hero-text {
+        margin-bottom: 50px;
+    }
+    .time h5 {
+        font-size: 16px;
+    }
+    .team-img {
+        width: 65px;
+    }
+    .team-name {
+        font-size: 14px;
+    }
+    .goal-details h4 {
+        font-size: 45px;
+    }
+    .game-data {
+        margin-bottom: 30px;
+    }
+    .club-data h2 {
+        font-size: 32px;
+    }
+    #game {
+        padding-bottom: 40px;
+    }
+    #footer {
+        padding: 40px 0;
+    }
+    .footer-logo {
+        max-width: 270px;
+        margin-bottom: 20px;
+    }
+}

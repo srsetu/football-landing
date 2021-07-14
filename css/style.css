@@ -1,0 +1,277 @@
+/*-------------------------
+    input google font
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*-------------------------
+    common style css
+-------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.small-container{
+    width: 1050px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.colm-6,.colm-4,.colm-12,.colm-3{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.colm-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.colm-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.colm-4{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.colm-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+img{
+    width: 100%;
+}
+h2,h3,p{
+    margin: 0;
+}
+.mb-27{
+    margin-bottom: 27px;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+.btn i{
+    margin-left: 8px;
+}
+.btn:hover i{
+    animation-name: buttonstyle;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+}
+.align-items{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+@keyframes buttonstyle{
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    50%{
+        transform: translateX(8px);
+        -webkit-transform: translateX(8px);
+        -moz-transform: translateX(8px);
+        -ms-transform: translateX(8px);
+        -o-transform: translateX(8px);
+    }
+    100%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+/*-------------------------
+    hero section
+-------------------------*/
+#hero {
+    background: #2D25A0;
+    padding: 65px 0;
+}
+.hero-text h2 {
+    font-size: 64px;
+    color: #fff;
+    line-height: 80px;
+    font-weight: 700;
+    max-width: 485px;
+    margin-bottom: 10px;
+}
+
+/*-------------------------
+    player section
+-------------------------*/
+#player {
+    padding: 70px 0;
+}
+.single-player {
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    height: 100%;
+}
+.player-text h3 {
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    margin: 4px 0;
+}
+.player-text p {
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+/*-------------------------
+    our club section
+-------------------------*/
+#our-club {
+    background: #eaeaea;
+    padding: 80px 0;
+}
+.club-data {
+    margin-bottom: 50px;
+}
+.club-data h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.club-data h2 {
+    font-size: 55px;
+    color: #6f6f6f;
+}
+.club-data p {
+    max-width: 550px;
+    text-align: center;
+    margin: auto;
+    color: #6f6f6f;
+}
+.club-details .icon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    background: #2D25A0;
+    border: 2px solid #2D25A0;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.club-details .icon i {
+    font-size: 40px;
+    line-height: 90px;
+    color: #fff;
+}
+.club-details h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    color: #6f6f6f;
+    text-transform: uppercase;
+}
+.club-details p {
+    color: #6f6f6f;
+    font-size: 16px;
+}
+
+/*-------------------------
+    game report section
+-------------------------*/
+#game {
+    padding: 80px 0;
+}
+.game-data {
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    padding: 30px 15px;
+    border-radius: 4px;
+}
+.goal-status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.goal-team {
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-img {
+    width: 100px;
+}
+.time h5 {
+    font-weight: 400;
+    color: #6f6f6f;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.goal-details h4 {
+    font-size: 60px;
+    line-height: 1;
+    color: black;
+    font-weight: 700;
+}
+.team-name {
+    color: #6f6f6f;
+    font-weight: 400;
+}
+.more-btn {
+    margin-top: 25px;
+}
+
+
+/*-------------------------
+    footer section
+-------------------------*/
+#footer {
+    padding: 65px 0;
+}
+.footer-logo {
+    max-width: 400px;
+    margin: auto;
+}
+.social-icon a {
+    background: #0b0d1712;
+    color: #969BAB;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 14px;
+}
+.copy-text p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+}
